@@ -1,0 +1,21 @@
+.row {
+	display: flex;
+	flex-flow: column wrap;
+
+	&--gutters > div{
+		padding-right: 3rem;
+	}
+
+	@mixin atMedium {
+		flex-flow: row wrap;
+		&__33 {
+			flex: 1;
+		}
+
+		&__66 {
+			flex: 2;
+		}
+	}
+
+	
+}
