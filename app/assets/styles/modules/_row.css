@@ -2,9 +2,16 @@
 	display: flex;
 	flex-flow: column wrap;
 
-	
+	&__b-margin-until-medium {
+		margin-bottom: 1rem;
+	}
 
 	@mixin atMedium {
+
+		&__b-margin-until-medium {
+			margin-bottom: 0;
+		}
+
 		flex-flow: row wrap;
 		&__33 {
 			flex: 1;
