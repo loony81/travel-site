@@ -20,9 +20,17 @@
 		&__66 {
 			flex: 2;
 		}
+
+		&__50 {
+			flex: 1;
+		}
 		
 		&--gutters > div{
 			padding-right: 3rem;
+		}
+
+		&--gutters-large > div{
+			padding-right: 4rem;
 		}
 	}
 
