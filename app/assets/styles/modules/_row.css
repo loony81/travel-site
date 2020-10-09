@@ -6,6 +6,16 @@
 		margin-bottom: 1rem;
 	}
 
+	&--menu {
+		display: none;
+
+		@mixin atMedium{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+	}
+
 	@mixin atMedium {
 
 		&__b-margin-until-medium {
@@ -38,6 +48,8 @@
 				padding-right: 1.5em;
 			}
 		}
+
+
 		
 	}
 
