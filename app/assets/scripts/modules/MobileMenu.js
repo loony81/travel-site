@@ -12,6 +12,7 @@ class MobileMenu {
 	toggleMenu(){
 		this.menuContent.classList.toggle('site-header__menu--is-visible')
 		this.siteHeader.classList.toggle('site-header--background')
+		this.menuIcon.classList.toggle('site-header__menu-icon--x')
 	}
 }
 
