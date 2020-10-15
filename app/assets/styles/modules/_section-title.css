@@ -29,4 +29,10 @@
 		color: $mainBlue;
 		padding-bottom: 80px;
 	}
+
+	&--less-margin {
+		margin-bottom: 1.3rem;
+		margin-top: 0;
+		padding-bottom: 2rem;
+	}
 }
