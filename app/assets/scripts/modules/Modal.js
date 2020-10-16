@@ -3,14 +3,10 @@ class Modal {
 		this.injectHTML()
 		this.modal = document.querySelector('.modal')
 		this.closeIcon = document.querySelector('.modal__close')
-		this.openModalButtons = document.querySelectorAll('.open-modal')
 		this.fireEvents()
 	}
 
 	fireEvents() {
-		this.openModalButtons.forEach(btn => {
-			btn.addEventListener('click', e => this.openModal(e))
-		})
 		this.closeIcon.addEventListener('click', () => this.closeModal())
 		//event hander to close modal if the esc key is pressed
 		document.addEventListener('keyup', e => {
@@ -18,8 +14,7 @@ class Modal {
 		})
 	}
 
-	openModal(e){
-		e.preventDefault()
+	openModal(){
 		this.modal.classList.add('modal--is-visible')
 	}
 
