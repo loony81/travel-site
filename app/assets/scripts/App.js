@@ -23,7 +23,6 @@ revealOnScroll.fireEvents()
 revealOnScroll2.hide()
 revealOnScroll2.fireEvents()
 clientArea.injectHTML()
-clientArea.fireEvents()
 
 document.querySelectorAll('.open-modal').forEach(el => {
 	el.addEventListener('click', e => {
