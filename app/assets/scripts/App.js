@@ -12,7 +12,7 @@ const mobileMenu = new MobileMenu()
 const stickyHeader = new StickyHeader()
 const revealOnScroll = new RevealOnScroll(document.querySelectorAll('.feature-item'), 75)
 const revealOnScroll2 = new RevealOnScroll(document.querySelectorAll('.testimonial'), 60)
-const clientArea = new ClientArea()
+new ClientArea()
 let modal
 
 
@@ -22,8 +22,6 @@ revealOnScroll.hide()
 revealOnScroll.fireEvents()
 revealOnScroll2.hide()
 revealOnScroll2.fireEvents()
-clientArea.injectHTML()
-clientArea.fireEvents()
 
 document.querySelectorAll('.open-modal').forEach(el => {
 	el.addEventListener('click', e => {
